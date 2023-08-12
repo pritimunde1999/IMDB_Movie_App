@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #242A32;
+    color: white;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+    background-color: #F5C518;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: black;
+}
+
+#sec1{
+    margin: 50px 40px;
+}
+
+#sec1 div{
+   border-radius: 5px;
+   display: flex;
+   margin-bottom: 10px;
+   align-items: center;
+   background-color: #3A3F47;
+   gap:15px;
+}
+
+input{
+    width: 95%;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+#btn{
+    background-color: transparent;
+    border: none;
+}
+#sec1 div span{
+    background-color: transparent;
+    color:#616369
+}
+
+#api span{
+    transform: rotate(-45deg);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap:70px;
+    margin: auto;
+    
+    flex-wrap: wrap;
+    width:fit-content;
+    
+}
+
+#search span{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#card{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+#card img{
+    width:200px;
+    height: 300px;
+    border-radius: 16px;
+}
+#rating{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+#rating span{
+    color: #F5C518;
+}
+
+#title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#more{
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#more a {
+    text-decoration: none;
+    color: #F5C518;
+}
+
+#loader{
+    display: none;
+    width:120px;
+    height:120px;
+    border: 6px solid #242A32;
+    border-top:6px solid white;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:410px)
+{
+    h1{
+        font-size: 25px;
+    }
+    #container{
+        grid-template-columns: auto;
+    }
+}
+@media (min-width: 411px) and (max-width:620px) {
+    h1{
+        font-size: 40px;
+    }
+    #container{
+        grid-template-columns: auto;
+    }
+    
+}
+@media (min-width: 621px) and (max-width:768px) {
+    
+    #container{
+        grid-template-columns: repeat(2,auto);
+        gap:90px;
+        margin: auto;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width:1035px) {
+    
+    #container{
+        grid-template-columns: repeat(3,auto);
+    }
+    
+}
+
+@media (min-width: 1036px) and (max-width:1260px) {
+
+    #container{
+        grid-template-columns: repeat(4,auto);
+    }
+    
+}
