@@ -1,6 +1,6 @@
 # IMDB_Movie_App
 
-Design an interactive movie search dashboard using the OMDB API. 
+Designed an interactive movie search dashboard using the OMDB API. 
 
 Features:
 1. Inputs & Search: Integrate two input fields:
