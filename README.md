@@ -1,4 +1,5 @@
 # IMDB_Movie_App
+Deployed Link : https://pritimunde1999.github.io/IMDB_Movie_App/
 
 Designed an interactive movie search dashboard using the OMDB API. 
 
